@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:minHeight="32dp"
+            android:minWidth="32dp"/>
+        <TextView
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:id="@+id/txt_username"
+            android:text="username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_comment"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+
+        android:background="@android:color/darker_gray"
+        android:inputType="text"
+        android:minHeight="50sp"
+        android:hint="Write your comment here."
+        android:id="@+id/commentWriter"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/commentWrite"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/commentWriter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="posted"
+            android:src="@drawable/ic_mode_comment_black_24dp" />
+    </RelativeLayout>
+</LinearLayout>
